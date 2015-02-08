@@ -1,2 +1,9 @@
 // Mixins
 
+@mixin border-hover($color){
+  border-bottom: 5px solid darken($color, 20%);
+}
+
+@mixin hover($color){
+    background-color: darken($color, 15%);
+}

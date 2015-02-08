@@ -45,7 +45,7 @@ body{
   font-size: 30px;
   
   &:hover{
-    border-bottom: 5px solid darken($primary, 20%);
+    @include border-hover($primary);
   }
 }
 
@@ -99,14 +99,14 @@ nav{
 
 #subnav{
   width: 100%;
-  border-bottom: 0px solid darken(#F64870, 15%);
+  border-bottom: 0px solid darken($secondary, 15%);
   background-color: #F64870;
   transition-duration: 0.2s;
   overflow: hidden;
   height: 0px;
   
   &.active{
-    border-bottom: 5px solid darken(#F64870, 15%);
+    border-bottom: 5px solid darken($secondary, 15%);
     height: 50px;
   }
   
@@ -127,7 +127,7 @@ nav{
       }
       
       &:hover{
-        background-color: darken(#F64870, 15%);
+        @include hover($secondary);
       }
     }
   }
